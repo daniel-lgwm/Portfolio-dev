@@ -1,0 +1,324 @@
+body {
+    background-image: url("./assets/imagemdefundo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo {
+    background: linear-gradient(to right, #e5e9f0, #4f31d4);
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+h3{
+    font-weight: bold;
+    color: #09b9c5;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid #cc00ff;
+    border-radius: 5px 5px 5px 5px;
+    background-color: black;
+}
+
+h2{
+    color: #ffffff;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.texto {
+    width: 70%;
+}
+
+.imagem img{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px 80px 0px 80px;
+    box-shadow: 0 0 20px #00aeff;
+    margin-bottom: 20px;
+}
+
+.text {
+    background: linear-gradient(to left, #5630ff, #00d9ff, #cc00ff);
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+.linkedin {
+    width: 60px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.linkedin:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(
+        0 0 15px #0a66c2
+    );
+
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.redes{
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.github-logo{
+    width: 50px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.github-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(
+        0 0 15px #ffffff
+    );
+
+}
+.contato{
+    background-color: white;
+    color: #0f03bd;
+    border-radius: 20px 20px 20px 20px;
+    width: 160px;
+    height: 40px;
+    border: 2px solid #cc00ff;
+    cursor: pointer;
+}
+
+.contato:hover{
+    transform: scale(1.08);
+    background-color: #cc00ff;
+    color: #ffffff;
+    transition: .3s
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -360px;
+}
+
+.titleproject {
+    background: linear-gradient(to left, #00aeff, #00eeff, #4f31d4, #cc00ff);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px 15px;
+}
+
+.skill img{
+    width: 60px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill p{
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 5px;
+    color:#00d9ff;
+    background-clip: text;
+    text-transform: capitalize;
+    font-style: static;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+    margin-left: 25px;
+    margin-top: -15px;
+}
+
+.botao{
+    background-color: #ffffff;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid #a200ff;
+    color: black;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+}
+
+.botao:hover{
+    background-color: #cc00ff;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.post{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descricao02{
+    border: 2px solid #cc00ff;
+    border-radius: 5px 5px 5px 5px;
+    text-align: left;
+    color: #00eeff;
+    font-style: oblique;
+    font-weight: bolder;
+    text-transform: oblique;
+    background-color: black;
+}
+
+/* versao para celular/Tablet/Desktop */
+
+@media screen and (max-width: 768px) {
+    
+    body{
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .texto{
+        width: 100%;
+    }
+
+    .text{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    h3{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .perfil{
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .imagem{
+        width: 220px;
+        height: auto;
+    }
+
+    .redes{
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .linkedin{
+        width: 45px;
+    }
+
+    .github-logo{
+        width: 40px;
+    }
+
+    .contato{
+        width: 150px;
+    }
+
+    .projetos{
+        width: 100%;
+        margin: 40px auto;
+        justify-content: center;
+    }
+
+    .descricao02{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .habilidades{
+        margin: 40px auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .skill img{
+        width: 50px;
+    }
+
+    .skill p{
+        font-size: 14px;
+    }
+}
+
+.traduzir{
+    background-color: rgb(255, 255, 255);
+    border: 50%;
+}
+
+.flag{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bandeiras{
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
